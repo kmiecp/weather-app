@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A simple weather app with a little forecast. Nothing special."
+    />
+    <title>Weather App &mdash; Check it !</title>
+    <link rel="icon" href="./img/logo/logo-64.png" />
+    <link rel="apple-touch-icon" href="./img/logo/logo-apple-touch-180.png" />
+    <link rel="manifest" href="./manifext.webmanifest" />
+    <link href="./styles/main.css" rel="stylesheet" type="text/css" />
+    <script src="./js/controller.js" type="module" defer></script>
+  </head>
+  <body>
+    <div class="aplication">
+      <div class="application__wrapper">
+        <header class="header">
+          <nav class="header__menu">
+            <img src="./img/logo/logo-192.png" class="header__logo" />
+            <div class="header__search">
+              <svg class="search__icon search__icon-search">
+                <use href="./img/icons/icons.svg#icon-search"></use>
+              </svg>
+              <input
+                type="text"
+                placeholder="Wpisz miejscowość"
+                class="header__input"
+              />
+              <svg class="search__icon search__icon-loaction">
+                <use href="./img/icons/icons.svg#icon-location"></use>
+              </svg>
+            </div>
+          </nav>
+        </header>
+
+        <main>
+          <div class="weather__wrapper">
+            <!-- <div class="weather__section weather__section-left">
+            <p class="weather__city">Miasto</p>
+            <div class="weather__temps">
+              <p class="main__temp"> 9 &#176  </p>
+              <p class="feels__temp">Feels like: 4 &#176 C </p>
+            </div>
+              <div class="weather__icon">
+                <img src="" alt="">
+                <span class="weather__condition">Sunny </span>
+              </div>
+          </div>
+          <div class="weather__section weather__section-right">
+            <ul class="weather__list">
+              <li class="weather__item"><span class="weather__data-title">Rain</span>
+              <span class="weather__data weather__data-rain">11</span></li>
+              <li class="weather__item"><span class="weather__data-title">Pressure</span>
+              <span class="weather__data weather__data-pressure">22</span></li>
+              <li class="weather__item"><span class="weather__data-title">Cloudy</span>
+              <span class="weather__data weather__data-cloud">22 </span></li>
+              <li class="weather__item"><span class="weather__data-title">Wind</span>
+              <span class="weather__data weather__data-wind">22</span></li>
+            </ul>
+          </div> -->
+          </div>
+          <div class="weather__forecast">
+            <ul class="forecast__list">
+              <!-- <li class="forecast__item">
+              <span class="forecast__day">Monday</span>
+              <span class="forecast__img">IMG</span>
+              <span class="forecast__data">10/9</span>
+            </li>
+            <li class="forecast__item">
+              <span class="forecast__day">Thuesday</span>
+              <span class="forecast__img">IMG</span>
+              <span class="forecast__data">10/9</span>
+            </li> -->
+            </ul>
+          </div>
+        </main>
+      </div>
+    </div>
+    <div class="message__wrapper message__wrapper-hidden">
+      <svg class="icon icon__close-message">
+        <use href="./img/icons/icons.svg#icon-close"></use>
+      </svg>
+      <div class="message__wrapper-section">
+        <!-- <p class="message__txt"></p>  -->
+      </div>
+    </div>
+  </body>
+</html>
